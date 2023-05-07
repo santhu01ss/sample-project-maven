@@ -1,0 +1,26 @@
+pipeline {
+    agent any 
+        stages {
+            stage ('git'){
+                steps {
+                    sh 'echo hi git pipeline'
+                }
+            }
+        stage ('maven'){
+            steps{
+                sh 'echo maven pipeline'
+            }
+        }
+        stage ('sonar'){
+            steps{
+                sh 'echo sq pipeline'
+            }
+        }
+        stage('nexus'){
+            steps{
+                sh 'echo nexus pipeline'
+            }
+        }
+        }
+        
+}
