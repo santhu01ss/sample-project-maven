@@ -4,6 +4,7 @@ stages{
 stage ('build maven'){
 steps{
   echo 'this is maven pipeline'
+  echo 'hi heloooo'
   sh 'mvn clean install package'
 }
 }
