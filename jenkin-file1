@@ -1,0 +1,11 @@
+pipeline{
+agent any
+stages{
+stage ('build maven'){
+steps{
+  echo 'this is maven pipeline'
+  sh 'mvn clean install package'
+}
+}
+}
+}
